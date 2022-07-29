@@ -113,7 +113,7 @@ public class Node {
 
 	// to format Edges of MSP --DelivC
 	public String formatMSP() {
-		return abbrev;
+		return abbrev + " -> ";
 	}
 
 	// find edge method
