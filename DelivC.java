@@ -54,7 +54,7 @@ public class DelivC {
 
 		for (Edge e : MST_PRIM()) {
 
-			System.out.println(e.getHead().formatMSP() + "-" + e.getTail().formatMSP());
+			System.out.println(e.getHead().formatForC() + e.getTail().formatSimple());
 
 		}
 
@@ -87,7 +87,7 @@ public class DelivC {
 		// while Q is not empty
 		while (!Q.isEmpty()) {
 			Node n3 = Q.poll();// extract-minHeap
-            // add the edge into the  MST -list
+			// add the edge into the MST -list
 			if (n3.getPreviousNode() != null) {
 				Edge e = n3.findEdge(n3.getPreviousNode());
 				MST.add(e);
@@ -115,4 +115,5 @@ public class DelivC {
 
 	}// end of MST_PRIM
 
+//	
 } // end of the class

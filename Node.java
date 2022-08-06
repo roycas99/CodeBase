@@ -111,9 +111,19 @@ public class Node {
 
 	}
 
-	// to format Edges of MSP --DelivC
+	// simple format
+	public String formatSimple() {
+		return abbrev;
+	}
+
+	// to format Edges of MSP --DelivD
 	public String formatMSP() {
 		return abbrev + " -> ";
+	}
+
+	// to format Edges of MSP --DelivC
+	public String formatForC() {
+		return abbrev + "-";
 	}
 
 	// find edge method

@@ -73,7 +73,7 @@ public class DelivB {
 		// we only do DFS_visit if node is undiscover
 
 		// sort Nodes by name  before you discover in 
-		NodeSorted ns = new NodeSorted();
+		NodeSortedB ns = new NodeSortedB();
 		Collections.sort(g.getNodeList(), ns);
 		for (Node node2 : g.getNodeList()) {
 			if (node2.getColor().equalsIgnoreCase("WHITE")) {
